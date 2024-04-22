@@ -254,7 +254,12 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1280px;
+  width: 1280px;
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
 }
 .first-element {
   display: flex;
@@ -370,17 +375,20 @@ button {
 .fqa {
   display: flex;
   flex-direction: column;
-  padding: 0em 0.5em;
-  align-items: center;
+  padding: 0em 1em;
   margin-top: 7em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
 }
 .faq-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  padding: 0 0.5em;
   width: 100%;
 }
-.fqa .container > h2 {
+.faq-container > h2 {
   /* background: linear-gradient(90deg, #101a34 0%, #c9f0e4 50%, #101a34 100%); */
   grid-column: 1 / -1;
   text-align: left;
@@ -393,6 +401,12 @@ button {
   border-bottom: #f4f1ee 1px solid;
   padding-bottom: 0.2em;
   margin-bottom: 1em;
+  width: 100%;
+}
+@media screen and (max-width: 1280px) {
+  .fqa > img {
+    display: none;
+  }
 }
 .faq {
   display: flex;
@@ -419,23 +433,19 @@ button {
   text-align: left;
   width: 100%;
 }
-.faq > button {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  width: 100%;
-}
 .faq-btn {
   background: transparent;
   height: 50px;
   align-items: center;
   display: flex;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
   border-bottom: #c9f0e4 1px solid;
 }
-
 .faq > p {
   padding-top: 1em;
-  /* display: none; */
   font-size: 16px;
 }
 .footer {

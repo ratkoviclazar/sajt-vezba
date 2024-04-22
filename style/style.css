@@ -482,24 +482,24 @@ button {
   flex-direction: column;
   list-style: none;
   padding: 1em;
-  background-color: #ca9352;
+  background-color: transparent;
   margin-bottom: 1em;
   width: 75%;
-  box-shadow: 0px 5px 5px rgba(90, 85, 85, 0.5);
+  box-shadow: 5px 5px 5px rgba(90, 85, 85, 0.5);
 }
 .container-contact > ul > li {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 1em;
-  color: #0f1d2d;
+  color: #c9f0e4;
   font-weight: bold;
 }
 .container-contact > ul > li:last-child {
   margin-bottom: 0;
 }
 .container-contact > ul > li > a {
-  color: #0f1d2d;
+  color: #c9f0e4;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -511,11 +511,11 @@ button {
   transition: 0.5s ease-out;
 }
 .container-contact > ul > li > strong {
-  color: #c9f0e4;
+  color: #86b1d9;
   margin-right: 1em;
 }
 .container-contact > ul > li:nth-child(n + 4) {
-  color: #0f1d2d;
+  color: #c9f0e4;
   font-weight: bold;
   font-style: italic;
   text-decoration: none;
