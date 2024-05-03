@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/about.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
     <link
       rel="shortcut icon"
       type="image/logo"
       href="./images/logo/logoipsum-299.svg"
     />
-    <title>Contact Us</title>
+    <title>Contact</title>
   </head>
   <body>
     <div class="header">
@@ -72,15 +72,44 @@
         </li>
       </ul>
     </div>
-    <div class="hero">
-      <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, at
-          id! Distinctio amet assumenda odio, vel ducimus dolor voluptatibus
-          odit corrupti impedit error, eveniet nesciunt, eos quaerat porro
-          natus? Possimus.
-        </p>
-      </div>
+    <div class="form-contact">
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Submit" class="btn-submit" />
+      </form>
     </div>
+    <div class="footer">
+      <ul>
+        <li><p>&copy 2024 M. Paradise, Inc. All rights reserved.</p></li>
+        <li>
+          <a href="https://www.instagram.com/"
+            ><img
+              src="./images/icons/instagram.png"
+              alt="instagram"
+              class="footer-icons"
+          /></a>
+          <a href="https://www.facebook.com/"
+            ><img
+              src="./images/icons/facebook.png"
+              alt="facebook"
+              class="footer-icons"
+          /></a>
+          <a href="index.html" id="footer-logo"
+            ><img
+              src="./images/logo/logoipsum-299.svg"
+              alt="logo"
+              class="logo"
+            />
+            <p>Mountain Paradise</p></a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="js/contact.js"></script>
   </body>
 </html>
