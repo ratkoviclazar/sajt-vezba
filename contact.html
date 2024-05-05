@@ -73,14 +73,63 @@
       </ul>
     </div>
     <div class="form-contact">
-      <form action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <input type="submit" value="Submit" class="btn-submit" />
+      <h1>Send Us A Message</h1>
+      <form action="submit" class="form">
+        <div class="left">
+          <img
+            src="./images/contact-image.jpg"
+            alt="contact"
+            class="contact-img"
+          />
+        </div>
+        <div class="right">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name..."
+            required
+          />
+          <p id="name-error" class="error">Name must be filled out!</p>
+          <p id="name-error1" class="error">Name must be 3 characters long!</p>
+          <p id="name-error2" class="error">Name must contain only letters!</p>
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Enter your surname..."
+            required
+          />
+          <p id="surname-error" class="error">
+            Surname must be at least 3 characters long!
+          </p>
+          <p id="surname-error1" class="error">
+            Surname must contain only letters!
+          </p>
+          <p id="surname-error2" class="error">Surname must be filled out!</p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address..."
+            required
+          />
+          <p id="email-error" class="error">Email must be filled out!</p>
+          <p id="email-error1" class="error">Email is not valid!</p>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="How we can help?"
+            required
+          ></textarea>
+          <p id="message-error" class="error">Message must be filled out!</p>
+          <p id="correct">Your message is sent successfully!</p>
+          <input type="submit" value="Submit" class="btn-submit" />
+        </div>
       </form>
     </div>
     <div class="footer">
