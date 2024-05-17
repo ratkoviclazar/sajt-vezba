@@ -225,6 +225,14 @@ button {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .first-element > h1 {
+    display: none;
+  }
+  .first-element > p {
+    align-self: center;
+  }
+}
 
 .front {
   position: relative;
